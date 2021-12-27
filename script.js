@@ -26,6 +26,7 @@ const reset_game = () => {
   gameState["currentTurn"] = true;
   gameState["cells"].forEach((cell) => (cell.textContent = ""));
   gameState["cells"].forEach((cell) => (cell.style.background = "none"));
+  setCurrentPlayer();
 };
 
 const highlightWinningCells = (winningCells) => {
